@@ -1,4 +1,4 @@
-package exercises.lesson01.withdraw_amount;
+package exercises.lesson01.account;
 
 public class Account{
 
