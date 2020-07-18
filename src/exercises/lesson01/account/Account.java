@@ -24,6 +24,25 @@ public class Account{
         nextAccount++;
     }
 
+    // I created a remaining balance method for fun
+    public int remainingBalance(int withdrawn) {
+
+        withdrawn = balance - withdrawn;
+        return withdrawn;
+    }
+
+    // Homework answer
+    public int withdraw(int amountwithdrawn) {
+
+        if (amountwithdrawn <= balance) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
+
+        return amountwithdrawn;
+    }
+
     public void deposit(int b){
         balance = balance + b;
     }

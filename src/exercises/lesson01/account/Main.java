@@ -22,6 +22,14 @@ public class Main {
         System.out.println(bob.nextAccount);
         System.out.println(Account.nextAccount);
 
+        // Homework
+
+        // I created a remaining balance method for fun
+        System.out.println("Remaining Balance " + alice.remainingBalance(25));
+
+        // withdraw method lets you know if you have enough after making with draw request
+        alice.withdraw(25);
+        alice.withdraw(150);
     }
 }
 
