@@ -1,4 +1,4 @@
-package exercises.gradedExercises.codingExcercise03_Fix_It;
+package exercises.gradedExercises.codingExercise03_Fix_It;
 public class Main {}
 /*
 Instructions:
