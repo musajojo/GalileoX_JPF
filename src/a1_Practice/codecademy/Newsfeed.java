@@ -1,6 +1,4 @@
-package a1_Practice.other;
-
-import java.util.Arrays;
+package a1_Practice.codecademy;
 
 public class Newsfeed {
 
@@ -16,11 +14,16 @@ public class Newsfeed {
     }
 
     public String getTopTopic(){
+
         return topics[0];
     }
 
+    /*
+    Inside the method,
+    set the value of the views array at the index topicIndex to the current value plus 1.
+     */
     public void viewTopic(int topicIndex){
-        //views[] = topicIndex + 1;
+        views[topicIndex] = topicIndex + 1;
     }
 
     public static void main(String[] args){

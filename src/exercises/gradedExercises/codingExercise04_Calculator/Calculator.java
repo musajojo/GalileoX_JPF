@@ -27,6 +27,28 @@ public class Calculator {
                 result = this.result.doubleValue() * num1.doubleValue();
                 break;
             }
+            case "sin":{
+                result = Math.sin(num1.doubleValue());
+                break;
+            }
+            case "cos": {
+                result = Math.cos(num1.doubleValue());
+                break;
+            }
+                case "tan":{
+                    result = Math.sin(num1.doubleValue());
+                    break;
+                }
+            case "!":{
+                int num = (int) result, i = 1;
+                long factorial = 1;
+                while(i <= num)
+                {
+                    factorial *= i;
+                    i++;
+                }
+                break;
+            }
             default: {
                 result = num1;
             }
@@ -37,6 +59,22 @@ public class Calculator {
 
     public void operate (String operator) {
         //Complete the missing implementation
+        int newValue = 0;
+        switch (operator) {
+            case "C": {
+                this.result = newValue;
+                break;
+            }
+            case "e": {
+                this.result = Math.E;
+
+                break;
+            }
+            default: {
+                result = 0;
+            }
+        }
+        System.out.println(this.result);
         //this.result = newValue
     }
 
