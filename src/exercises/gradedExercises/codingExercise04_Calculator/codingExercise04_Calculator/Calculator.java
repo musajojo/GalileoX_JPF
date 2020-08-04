@@ -7,7 +7,7 @@ public class Calculator {
         this.result = 0;
     }
 
-    public void operate (String operator, Number num1) {
+    public void operate(String operator, Number num1) {
         //Make it better! Give a better solution for operate(String, Number)
         Number result = 0;
         switch (operator) {
@@ -27,7 +27,7 @@ public class Calculator {
                 result = this.result.doubleValue() * num1.doubleValue();
                 break;
             }
-            case "sin":{
+            case "sin": {
                 result = Math.sin(num1.doubleValue());
                 break;
             }
@@ -35,15 +35,14 @@ public class Calculator {
                 result = Math.cos(num1.doubleValue());
                 break;
             }
-            case "tan":{
-                    result = Math.sin(num1.doubleValue());
-                    break;
-                }
-            case "!":{
+            case "tan": {
+                result = Math.sin(num1.doubleValue());
+                break;
+            }
+            case "!": {
                 int i = 1;
-                int factorial = 1;
-                while(i <= (int) num1)
-                {
+                double factorial = 1;
+                while (i <= (int) num1) {
                     factorial *= i;
                     i++;
                 }
@@ -57,8 +56,19 @@ public class Calculator {
         System.out.println(this.result.doubleValue() + " " + operator + " " + num1.doubleValue() + " = " + result.doubleValue());
         this.result = result;
     }
+// New Personal Constructor for "pi"
+    public void operate(String operator, String option) {
+        int newValue = 0;
+        if (option == "pi"){
+            String pi = "3.14";
+            double i = Double.parseDouble(pi);
+            this.result = newValue;
+        } else {
+            System.out.println("Invalid!!!");
+        }
+    }
 
-    public void operate (String operator) {
+    public void operate(String operator) {
         //Complete the missing implementation
         int newValue = 0;
         switch (operator) {
@@ -76,7 +86,7 @@ public class Calculator {
             }
         }
         System.out.println(this.result);
-        //this.result = newValue
+//        this.result = newValue;
     }
 
     public void firstValue(Number num1) {
