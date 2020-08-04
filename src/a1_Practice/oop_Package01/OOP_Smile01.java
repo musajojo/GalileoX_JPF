@@ -6,7 +6,7 @@ public class OOP_Smile01 {
 
 
         int num = 5, i = 1;
-        long factorial = 1;
+        int factorial = 1;
         while(i <= num)
         {
             factorial *= i;

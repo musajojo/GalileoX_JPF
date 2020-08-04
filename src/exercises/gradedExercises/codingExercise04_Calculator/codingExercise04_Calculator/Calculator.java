@@ -1,4 +1,4 @@
-package exercises.gradedExercises.codingExercise04_Calculator;
+package exercises.gradedExercises.codingExercise04_Calculator.codingExercise04_Calculator;
 
 public class Calculator {
     Number result;
@@ -35,18 +35,19 @@ public class Calculator {
                 result = Math.cos(num1.doubleValue());
                 break;
             }
-                case "tan":{
+            case "tan":{
                     result = Math.sin(num1.doubleValue());
                     break;
                 }
             case "!":{
-                int num = (int) result, i = 1;
-                long factorial = 1;
-                while(i <= num)
+                int i = 1;
+                int factorial = 1;
+                while(i <= (int) num1)
                 {
                     factorial *= i;
                     i++;
                 }
+                result = factorial;
                 break;
             }
             default: {
