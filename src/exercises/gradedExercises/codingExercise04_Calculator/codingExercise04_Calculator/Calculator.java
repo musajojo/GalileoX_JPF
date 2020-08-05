@@ -58,14 +58,15 @@ public class Calculator {
     }
 // New Personal Constructor for "pi"
     public void operate(String operator, String option) {
-        int newValue = 0;
+        double piNum = 0.0;
         if (option == "pi"){
             String pi = "3.14";
-            double i = Double.parseDouble(pi);
-            this.result = newValue;
+            piNum = Double.parseDouble(pi);
         } else {
             System.out.println("Invalid!!!");
         }
+        double piResult = (double) this.result + piNum;
+        System.out.println(this.result + " " + operator + " " +  piNum + " = " + piResult);
     }
 
     public void operate(String operator) {

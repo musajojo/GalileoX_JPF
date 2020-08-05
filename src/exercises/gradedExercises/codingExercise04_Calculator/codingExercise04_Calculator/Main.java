@@ -28,11 +28,11 @@ public class Main {
 //        advanced.operate("C"); //Reset result to 0
 //        advanced.operate("tan", 0); //Assign tan(0) to result
 //        advanced.operate("C"); //Reset result to 0
-        advanced.operate("!", 5); //Assign the value of 5! to result (120)
+//        advanced.operate("!", 5); //Assign the value of 5! to result (120)
 //        advanced.operate("C"); //Reset result to 0
         advanced.operate("e"); //Assign the value of "e" to result
         advanced.operate("+", 1.25);
-        advanced.operate("+", "pi"); //Add the value of pi to result
+        advanced.operate("-", "pi"); //Add the value of pi to result
 
 
         //Add at least 5 different operations and share your codeboard project in the forum.
